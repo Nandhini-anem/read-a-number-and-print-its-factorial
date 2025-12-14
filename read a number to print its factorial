@@ -1,0 +1,19 @@
+#include<stdio.h>
+int Factorial(int input);
+void main()
+{
+  int fn, sn;
+  printf("Enter first number:");
+  scanf("%d", &fn);
+  printf("Enter second number:");
+  scanf("%d", &sn);
+  printf("Factorial of %d is %d\n", fn, Factorial(fn));
+  printf("Factorial of %d is %d", sn,Factorial(sn));
+}
+int Factorial(int input)
+{
+int fact=1, i;
+for(i=1; i<= input; i++)
+fact= fact*i;
+return fact;
+}
